@@ -6,7 +6,9 @@ class ItemList extends React.Component{
     constructor(props) {
         super(props);
 
-        this.state={items:[],isLoaded:false}
+        this.state={
+            items: [] ,
+            isLoaded:false}
         // const [isLoaded, setIsLoaded] = useState(false);
         // const [items, setItems] = useState([]);
     //this.handleClick = this.handleClick.bind(this);
@@ -47,7 +49,7 @@ class ItemList extends React.Component{
         return(<div>
 
             <button className={'btn btn-danger'} onClick={this.ClickHandler}> fetch <data></data></button>
-            {this.state.items.map(item => <ItemView item={item}/>)}
+            {/*{this.state.items.map(item => <ItemView item={item}/>)}*/}
 
         </div>)
     }
